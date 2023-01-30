@@ -1,0 +1,118 @@
+.navBar{
+  width: 1440px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+
+  .navBarWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 44px;
+
+
+    .logoContainer{
+      display: flex;
+
+      .logoIcon{
+        width: 21px;
+        height: 21px;
+        padding-right: 10px;
+      }
+
+      .logoText{
+        width: 115px;
+        height: 30px;
+      }
+    }
+
+    .search form {
+      border: 1px solid #213F7D;
+      opacity: 0.2;
+      width: 400px;
+      border-radius: 8px;
+      height: 35px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background: #FFFFFF;
+      box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    
+     input {
+      width: 344px;
+      padding: 10px;
+      margin: 0;
+      border-radius: 8px;
+      border: none;
+    } 
+    
+    button {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 56px;
+      border: none;
+      border-radius: 0;
+      background: #39CDCC;
+      opacity: none;
+    }
+  }
+    }
+
+    .links{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+
+      .doc p{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        color: #213F7D;
+        padding-right: 50px;
+      }
+
+      .alarm{
+        width: 20px;
+        height: 23px;
+        padding-right: 33px;
+      }
+
+      .linkImage {
+        width: 48px;
+        height: 60px;
+        padding-right: 10px;
+        img {
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        .linkName p {
+          font-family: 'Work Sans';
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #213F7D;
+          
+        }
+
+        .arrow {
+          width: 7px;
+          height: 4px;
+          margin-left: 10px;
+
+          img{
+            object-fit: cover;
+          }
+        }
+      }
+     
+    }
+}
