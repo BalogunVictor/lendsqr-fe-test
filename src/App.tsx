@@ -1,6 +1,6 @@
 // import Login from "./Components/Login/Login";
 import './App.scss'
-import { TopNavBar } from './Components/TopNavBar/TopNavBar';
+import Dashboard from './Components/Dashboard/Dashboard';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       </header>
       <main>
         {/* <Login /> */}
-        <TopNavBar />
+        <Dashboard />
       </main>
       
 

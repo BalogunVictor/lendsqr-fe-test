@@ -1,0 +1,18 @@
+.dashboard{
+  width: 1440px;
+  display: block;
+  justify-content: center;
+
+  .dashboardWrapper{
+    display: flex;
+    .sidebar{
+      width: 283px;
+    }
+
+    .main{
+      width: 100%;
+      background-color: #e5e5e534;
+    }
+
+  }
+}

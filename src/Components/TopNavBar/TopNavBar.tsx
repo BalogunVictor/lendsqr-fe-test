@@ -1,5 +1,6 @@
 import './Topnavbar.scss'
 import {AiOutlineSearch} from 'react-icons/ai'
+import {RiArrowDropDownFill} from 'react-icons/ri'
 
 export const TopNavBar = () => {
   return (
@@ -35,7 +36,7 @@ export const TopNavBar = () => {
           <p>Adedeji</p>
         </div>
         <div className="arrow">
-          <img src="/asset/topnav/arrow.png" alt="" />
+          <RiArrowDropDownFill />
         </div>
       </div>
 

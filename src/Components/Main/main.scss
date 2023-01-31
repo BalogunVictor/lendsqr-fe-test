@@ -1,0 +1,22 @@
+.main{
+  width: auto;
+  
+
+  .header{
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: 24px;
+    padding-top: 60px;
+    padding-left: 60px;
+  }
+
+  .mainWrapper{
+    padding: 40px 60px;
+
+    .table{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      background-color: #ffff;
+    }
+  }
+}
