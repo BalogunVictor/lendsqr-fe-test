@@ -1,8 +1,28 @@
+@import"../Abstract/mixin.scss";
+
 .cardList{
   padding: 40px 0;
+
+  @include respond(tab-land) {
+    padding: 20px 0;
+  }
+  
+  @include respond(phone) {
+    padding: 0px 0;
+  }
+  
   .cardListWrapper{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+
+    @include respond(tab-land) {
+      gap: 10px;
+    }
+    @include respond(phone) {
+      grid-template-columns: 1fr ;
+    }
+    
     .card{
       width: 240px;
       height: 160px;
@@ -10,6 +30,79 @@
       box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
       border-radius: 4px;
       background-color: #ffff;
+
+      @include respond(tab-land) {
+        width: 180px;
+      }
+
+      @include respond(tab-land) {
+        width: 270px;
+      }
+
+      .cardWrapper{
+        padding: 20px 30px;
+
+        .usersWithSavings{
+          width: 40px;
+          height: 40px;
+          background-color: rgba(255, 51, 102,0.1);
+          color: rgba(255, 51, 102, 1);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center; 
+        }
+
+        .users{
+          width: 40px;
+          height: 40px;
+          background-color: rgba(223, 24, 255, 0.1);
+          color: #DF18FF;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .activeUser{
+          width: 40px;
+          height: 40px;
+          background-color:  rgba(87, 24, 255, 0.1);
+          color:  rgba(87, 24, 255, 1);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .usersWithLoans{
+          width: 40px;
+          height: 40px;
+          background-color:  rgba(245, 95, 68, 0.1);
+          color:  rgba(245, 95, 68, 1);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+  
+
+        .text{
+            font-family: 'Work Sans';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #545F7D;
+        }
+
+        .number{
+          font-family: 'Work Sans' sans-serif;
+          font-weight: 600;
+          font-size: 24px;
+          color: #213F7D;
+        }
+      }
     }
   }
 }

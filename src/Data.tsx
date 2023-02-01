@@ -1,3 +1,5 @@
+import {HiUsers } from 'react-icons/hi'
+
 
 export const customers = [
 
@@ -94,21 +96,21 @@ export const buinesses = [
 ]
 
 export const settings = [
-//   {
-//     id:1,
-//     logo: "/",
-//     name: "Preferences",
-//   },
-//   {
-//     id:2,
-//     logo: "/",
-//     name: "Fees and Pricing",
-//   },
-//   {
-//     id:3,
-//     logo: "/",
-//     name: "Audit Logs",
-//   },
+  {
+    id:1,
+    Logo: <HiUsers />,
+    name: "Preferences",
+  },
+  {
+    id:4,
+    Logo: <HiUsers />,
+    name: "Fees and Pricing",
+  },
+  {
+    id:3,
+    Logo: <HiUsers />,
+    name: "Audit Logs",
+  },
 ]
 
 

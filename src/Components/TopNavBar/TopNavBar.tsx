@@ -1,6 +1,7 @@
 import './Topnavbar.scss'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {RiArrowDropDownFill} from 'react-icons/ri'
+import {BsBell} from 'react-icons/bs'
 
 export const TopNavBar = () => {
   return (
@@ -17,7 +18,7 @@ export const TopNavBar = () => {
           <input type="text" placeholder='search for anything' />
           <button>
             <AiOutlineSearch />
-          {/* <img src="/asset/topnav/search.png" alt="" /> */}
+
           </button>
         </form>
       </div>
@@ -27,7 +28,7 @@ export const TopNavBar = () => {
           <p>docs</p>
         </div>
         <div className='alarm'>
-          <img src="/asset/topnav/alarm.png" alt="" />
+          <BsBell size={25}/>
         </div>
         <div className='linkImage'>
           <img  src="/asset/topnav/image 4.png" alt="" />

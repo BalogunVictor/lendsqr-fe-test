@@ -1,3 +1,4 @@
+@import '../Abstract/mixin.scss';
 .sideBar{
   height: 100%;
   background-color: #ffff;
@@ -6,30 +7,44 @@
   .sidebarWrapper{
     padding: 39px 30px;
 
+    p{
+      font-family: 'Work Sans';
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #545F7D;
+    }
+
     .sidebarList{
       padding: 0;
       margin: 0;
       height: 40px;
       list-style: none;
-  
+      display: flex;
+      align-items: center;
+
     &:hover {
-      background: #39cdcd21;
+      background: rgba(57, 205, 204, 0.06);
       cursor: pointer;
     }
   }
-
   .sidebarListItem{
     display: flex;
-    color: #21407d59;
-
     
     .sidebarListItemText{
       font-family: 'Work Sans';
       font-weight: 400;
       font-size: 16px;
-      line-height: 19px;
-      color: #21407d59
+      color: #213F7D;
+
+      @include respond(tab-land) {
+        font-size: 14px;
+      }
+
     }
+     .switch{
+      padding-bottom: 52px;
+     }
 
     .sidebarIcon{
       margin-right: 16px;
