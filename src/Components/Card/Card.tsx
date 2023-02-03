@@ -34,8 +34,8 @@ export const CardList = () => {
             <div className="usersWithLoans">
             <FaCoins className='icon' size={20} />
             </div>
-            <p className='text'>Users</p>
-            <p className='number'>2453</p>
+            <p className='text'>Users with loans</p>
+            <p className='number'>12,453</p>
           </div>
         </div>
 
@@ -44,8 +44,8 @@ export const CardList = () => {
             <div className="usersWithSavings">
               <HiUsers className='icon' size={20} />
               </div>
-              <p className='text'>Users</p>
-              <p className='number'>2453</p>
+              <p className='text'>Users with savings</p>
+              <p className='number'>102,453</p>
           </div>
         </div>
 

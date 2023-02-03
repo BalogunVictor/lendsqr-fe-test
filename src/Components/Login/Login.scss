@@ -84,7 +84,7 @@
 
       form {
         display: block;
-
+        
         .inputForm {
           width: 447px;
           height: 50px;
@@ -92,6 +92,10 @@
           background: #FFFFFF;
           border: 2px solid rgba(84, 95, 125, 0.15);
           border-radius: 5px;
+
+          &::placeholder{
+            color: rgba(84, 95, 125, 0.6);
+          }
 
           @include respond(phone) {
             width: 350px;

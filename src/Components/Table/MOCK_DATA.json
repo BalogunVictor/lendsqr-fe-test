@@ -1,48 +1,48 @@
 
 [
-  // {
-//   "id":1,
-//   "organization": "Lendsqr",
-//   "Username": "Adedeji",
-//   "Email":"adedeji@lendsqr.com",
-//   "Phone_number":"08078903721",
-//   "Date_joined": "May 15, 2020 10:00 AM",
-//   "Status": "Inactive"
-// },
-// {
-//   "id":2,
-//   "organization":"Lendsqr",
-//   "Username":"Adedeji",
-//   "Email":"adedeji@lendsqr.com",
-//   "Phone_number":"08078903721",
-//   "Date_joined":"May 15, 2020 10:00 AM",
-//   "Status":"Inactive"
-// },
-// {
-//   "id":3,
-//   "organization":"Lendsqr",
-//   "Username": "Adedeji",
-//   "Email":"adedeji@lendsqr.com",
-//   "Phone_number":"08078903721",
-//   "Date_joined":"May 15, 2020 10:00 AM",
-//   "Status":"Inactive"
-// },
-// {
-//   "id":4,
-//   "organization":"Lendsqr",
-//   "Username":"Adedeji",
-//   "Email":"adedeji@lendsqr.com",
-//   "Phone_number":"08078903721",
-//   "Date_joined":"May 15, 2020 10:00 AM",
-//   "Status":"Inactive"
-// },
-// {
-//   "id":5,
-//   "organization":"Lendsqr",
-//   "Username":"Adedeji",
-//   "Email":"adedeji@lendsqr.com",
-//   "Phone_number":"08078903721",
-//   "Date_joined":"May 15, 2020 10:00 AM",
-//   "Status":"Inactive"
-// }
+  {
+  "id":1,
+  "organization": "Lendsqr",
+  "Username": "Adedeji",
+  "Email":"adedeji@lendsqr.com",
+  "Phone_number":"08078903721",
+  "Date_joined": "May 15, 2020 10:00 AM",
+  "Status": "Inactive"
+},
+{
+  "id":2,
+  "organization":"Lendsqr",
+  "Username":"Adedeji",
+  "Email":"adedeji@lendsqr.com",
+  "Phone_number":"08078903721",
+  "Date_joined":"May 15, 2020 10:00 AM",
+  "Status":"Inactive"
+},
+{
+  "id":3,
+  "organization":"Lendsqr",
+  "Username": "Adedeji",
+  "Email":"adedeji@lendsqr.com",
+  "Phone_number":"08078903721",
+  "Date_joined":"May 15, 2020 10:00 AM",
+  "Status":"Inactive"
+},
+{
+  "id":4,
+  "organization":"Lendsqr",
+  "Username":"Adedeji",
+  "Email":"adedeji@lendsqr.com",
+  "Phone_number":"08078903721",
+  "Date_joined":"May 15, 2020 10:00 AM",
+  "Status":"Inactive"
+},
+{
+  "id":5,
+  "organization":"Lendsqr",
+  "Username":"Adedeji",
+  "Email":"adedeji@lendsqr.com",
+  "Phone_number":"08078903721",
+  "Date_joined":"May 15, 2020 10:00 AM",
+  "Status":"Inactive"
+}
 ]

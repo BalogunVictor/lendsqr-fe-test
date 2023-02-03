@@ -3,13 +3,10 @@
 .cardList{
   padding: 40px 0;
 
-  @include respond(tab-land) {
-    padding: 20px 0;
+  @include respond(tab-port) {
+    padding: 20px 40px;
   }
   
-  @include respond(phone) {
-    padding: 20px 0;
-  }
   
   .cardListWrapper{
     display: grid;
@@ -19,7 +16,7 @@
 
 
     @include respond(tab-port) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 2fr 2fr;
       justify-content: center;
     }
     
@@ -44,8 +41,13 @@
         width: 220px;
       }
 
+
       .cardWrapper{
         padding: 20px 30px;
+
+        @include respond(phone) {
+          padding: 20px 40px;
+        }
 
         .usersWithSavings{
           width: 40px;

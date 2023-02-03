@@ -1,3 +1,5 @@
+@import '../Abstract/mixin.scss'; 
+
 .nav{
   width: 100%;
 
@@ -23,11 +25,11 @@
     font-size: 16px;
     color: #213F7D;
 
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       font-size: 14px;
     }
 
-    @include respond (phone) {
+    @include respond(phone) {
       font-size: 16px;
     }
 

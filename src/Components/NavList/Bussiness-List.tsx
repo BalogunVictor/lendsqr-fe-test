@@ -1,5 +1,5 @@
-import { IconType } from "react-icons/lib";
 import './navList.scss'
+import { IconType } from "react-icons/lib";
 
 type ListProps = {
   List:{
@@ -9,7 +9,7 @@ type ListProps = {
   }[]
 }
 
-export const Navlist = (props: ListProps) => {
+export const BusinessList = (props: ListProps) => {
   return (
     <div className='nav'>
       {
@@ -28,3 +28,4 @@ export const Navlist = (props: ListProps) => {
     </div>
   )
 }
+

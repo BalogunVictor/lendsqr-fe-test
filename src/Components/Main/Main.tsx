@@ -3,6 +3,7 @@ import {SlOptionsVertical} from 'react-icons/sl'
 import './main.scss'
 import {BsArrowRightCircle } from 'react-icons/bs'
 import { FaHome } from 'react-icons/fa'
+import { Table } from '../Table/Table'
 
 
 type handleOpenProps = {
@@ -13,8 +14,6 @@ type handleOpenProps = {
 export const Main = (props: handleOpenProps ) => {
   return (
     <div className='main'>
-
-
       <div className='header'>
         <BsArrowRightCircle 
           onClick= {props.handleOpen}
@@ -28,7 +27,8 @@ export const Main = (props: handleOpenProps ) => {
         <CardList />
         
         {/* <div className='table'> 
-          <div className="tableWrapper">  */}
+          <div className="tableWrapper"> 
+          <Table /> */}
             {/* /////////////// Header//////////////////// */}
             {/* <div className="tableHeader">
                 <li className='titleItem'>
@@ -86,12 +86,12 @@ export const Main = (props: handleOpenProps ) => {
               </div>
               <span className='bodyItem'><SlOptionsVertical/></span>
             </div>
-          <hr className='line' />
+        <hr className='line' /> */}
            
           
          
-        </div>
-          </div> */}
+        {/* </div>
+          </div>  */}
       </div>
     </div>
   )
