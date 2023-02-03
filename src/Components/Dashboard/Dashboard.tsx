@@ -16,14 +16,13 @@ const Dashboard = () => {
     <div className="dashboard">
       <TopNavBar />
       <div className='dashboardWrapper'>
-       {open ? <div className="sideBar" > 
-          <SideBar /> 
-        </div> :
-        
-        <div className='main'>
+          <div className= {open ? "active" : 'sideBar' }>
+          <SideBar handleOpen={handleOpen}  />
+          </div>
+          
+          <div className={open ? "activeMain" : 'main' }>
           <Main handleOpen={handleOpen} />
-        </div>
-}
+          </div>
       </div>
     </div>
     </>

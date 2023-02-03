@@ -1,7 +1,9 @@
 import { IconType } from "react-icons/lib";
+import './navList.scss'
 
 type ListProps = {
   List:{
+    id:number
     Logo: IconType;
     name: string
   }[]

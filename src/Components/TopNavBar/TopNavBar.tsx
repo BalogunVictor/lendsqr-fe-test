@@ -18,7 +18,6 @@ export const TopNavBar = () => {
           <input type="text" placeholder='search for anything' />
           <button>
             <AiOutlineSearch />
-
           </button>
         </form>
       </div>

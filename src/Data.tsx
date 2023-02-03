@@ -1,117 +1,134 @@
-import {HiUsers } from 'react-icons/hi'
+import {FiDivideCircle} from 'react-icons/fi'
+import {AiOutlinePercentage} from 'react-icons/ai'
+import {
+  FaToolbox,
+  FaUsers,
+  FaRegHandshake,
+  FaPiggyBank,
+  FaHandHoldingUsd,
+  FaCoins,
+  FaFan,
+  FaChartBar,
+} from 'react-icons/fa'
+import {
+  BsFillPersonCheckFill,
+  BsFillPersonXFill,
+  BsBank,
+ } from 'react-icons/bs'
+import {HiUsers} from 'react-icons/hi'
+import {RiUserSettingsFill,RiFilePaper2Line} from 'react-icons/ri'
+import { IoIosOptions } from 'react-icons/io'
 
 
-export const customers = [
+export  const customers = [
+//   {
+//   id: 1,
+//   Logo: HiUsers,
+//   name: "Users",
+// },
+// {
+//   id: 2,
+//   Logo: FaUsers,
+//   name: "Guarantors",
+// },
+// {
+//   id: 3,
+//   Logo: "/",
+//   name: "Loans",
+// },
+// {
+//   id: 4,
+//   Logo: FaRegHandshake,
+//   name: "Decision Models",
+// },
+// {
+//   id: 5,
+//   Logo: FaPiggyBank,
+//   name: "Savings",
+// },
+// {
+//   id: 6,
+//   Logo: FaHandHoldingUsd ,
+//   name: "Loan Requests",
+// },
+// {
+//   id: 7,
+//   Logo: BsFillPersonCheckFill,
+//   name: "Whitelist",
+// },
+// {
+//   id: 8,
+//   Logo: BsFillPersonXFill,
+//   name: "Karma",
+// },
 
-//   {
-//     id:1,
-//     logo: <HiUsers />,
-//     name: "Users",
-//   },
-//   {
-//     id:2,
-//     logo: <FaUsers />,
-//     name: "Guarantors",
-//   },
-//   {
-//     id:3,
-//     logo: "/",
-//     name: "Loans",
-//   },
-//   {
-//     id:4,
-//     logo: "/",
-//     name: "Decision Models",
-//   },
-//   {
-//     id:5,
-//     logo: "/",
-//     name: "Savings",
-//   },
-//   {
-//     id:6,
-//     logo: "/",
-//     name: "Loan Requests",
-//   },
-//   {
-//     id:7,
-//     logo: "/",
-//     name: "Whitelist",
-//   },
-//   {
-//     id:8,
-//     logo: "/",
-//     name: "Karma",
-//   },
-  
 ]
 
-export const buinesses = [
-
+// export const buinesses = [
 //   {
 //     id:1,
-//     logo: 
+//     Logo: FaToolbox,
 //     name: "Organization",
 //   },
 //   {
 //     id:2,
-//     logo: "/",
+//     Logo: FaHandHoldingUsd,
 //     name: "Loan Products",
 //   },
 //   {
 //     id:3,
-//     logo: "/",
+//     Logo: BsBank ,
 //     name: "Savings Products",
 //   },
 //   {
 //     id:4,
-//     logo: "/",
+//     Logo: FaCoins ,
 //     name: "Fees and Charges",
 //   },
 //   {
 //     id:5,
-//     logo: "/",
+//     Logo: "/",
 //     name: "Transactions",
 //   },
 //   {
 //     id:6,
-//     logo: "/",
+//     Logo: FaFan,
 //     name: "Services",
 //   },
 //   {
 //     id:7,
-//     logo: "/",
+//     Logo: RiUserSettingsFill,
 //     name: "Service Account",
 //   },
 //   {
 //     id:8,
-//     logo: "/",
+//     Logo: RiFilePaper2Line ,
 //     name: "Settlements",
 //   },
 //   {
 //     id:9,
-//     logo: "/",
+//     Logo: FaChartBar ,
 //     name: "Reports",
 //   },
-]
+// ]
 
-export const settings = [
-  {
-    id:1,
-    Logo: <HiUsers />,
-    name: "Preferences",
-  },
-  {
-    id:4,
-    Logo: <HiUsers />,
-    name: "Fees and Pricing",
-  },
-  {
-    id:3,
-    Logo: <HiUsers />,
-    name: "Audit Logs",
-  },
-]
+// export const settings = [
+//   {
+//     id:1,
+//     Logo: IoIosOptions,
+//     name: "Preferences",
+//   },
+//   {
+//     id:2,
+//     Logo: AiOutlinePercentage,
+//     name: "Fees and Pricing",
+//   },
+//   {
+//     id:3,
+//     Logo: FiDivideCircle ,
+//     name: "Audit Logs",
+//   },
+// ]
 
 
 

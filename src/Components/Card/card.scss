@@ -8,7 +8,7 @@
   }
   
   @include respond(phone) {
-    padding: 0px 0;
+    padding: 20px 0;
   }
   
   .cardListWrapper{
@@ -16,11 +16,16 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px;
 
-    @include respond(tab-land) {
-      gap: 10px;
+
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
     }
+    
     @include respond(phone) {
       grid-template-columns: 1fr ;
+      justify-content: center;
     }
     
     .card{
@@ -31,12 +36,12 @@
       border-radius: 4px;
       background-color: #ffff;
 
-      @include respond(tab-land) {
-        width: 180px;
+      @include respond(tab-port) {
+        width: 270px;
       }
 
-      @include respond(tab-land) {
-        width: 270px;
+      @include respond(small-lap) {
+        width: 220px;
       }
 
       .cardWrapper{

@@ -16,6 +16,7 @@ import {
   BsFillPersonCheckFill,
   BsFillPersonXFill,
   BsBank,
+  BsArrowLeftCircle
  } from 'react-icons/bs'
 import {HiUsers} from 'react-icons/hi'
 import {RiUserSettingsFill,RiFilePaper2Line} from 'react-icons/ri'
@@ -23,8 +24,11 @@ import { IoIosOptions } from 'react-icons/io'
 // import { Navlist } from '../NavList/Navlist'
 // import { settings } from '../../Data'
 
+type handleOpenProps = {
+  handleOpen: () => void
+}
 
-export const SideBar = () => {
+export const SideBar = (props:handleOpenProps) => {
 
   const customers = [
       {
@@ -185,13 +189,18 @@ export const SideBar = () => {
             </ul> 
             )
         })}
-    
-             {/* {settings.map((s) => (
-               <Navlist key={s.id} List={s} />
 
-              ))} */}
-         
+             {/* {settings.map((setting) => (
+               <Navlist key={setting.id} List={setting} />
+              ))} */}  
         </div>
+        <div className="navIcon">
+        <BsArrowLeftCircle
+          onClick= {props.handleOpen}
+          size={35}
+          className='navIcon'
+         />
+      </div>
       </div>
   )
 }

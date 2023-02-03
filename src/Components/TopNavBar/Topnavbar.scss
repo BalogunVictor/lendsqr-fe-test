@@ -50,16 +50,16 @@
     }
 
     .search form {
-      border: 1px solid rgba(33, 63, 125, 1);
+      border: 1px solid rgba(33, 63, 125, 0.2);
       width: 400px;
       border-radius: 8px;
       height: 35px;
-      margin: 0;
+      margin-right: 100px ;
       padding: 0;
       display: flex;
       background: rgba(255, 255, 255, 0.2);
       box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
-      @include respond(tab-land) {
+      @include respond(tab-port) {
         width: 250px;
       }
       @include respond(phone) {
@@ -74,7 +74,11 @@
       border-radius: 8px;
       border: none;
 
-      @include respond(tab-land) {
+      &::placeholder{
+        color: rgba(84, 95, 125, 0.7);
+      }
+
+      @include respond(tab-port) {
         width: 250px;
       }
 
@@ -85,6 +89,7 @@
       margin: 0;
       height: 100%;
       width: 56px;
+      color: #FFFFFF;
       border: none;
       border-top-right-radius: 8px;
       border-bottom-right-radius: 8px;
@@ -110,7 +115,7 @@
         color: #213F7D;
         padding-right: 50px;
 
-        @include respond(tab-land) {
+        @include respond(tab-port) {
           font-size: 12px;
           padding-right: 30px;
         }
@@ -121,7 +126,7 @@
 
       .alarm{
         padding-right: 33px;
-        @include respond(tab-land) {
+        @include respond(tab-port) {
           padding-right: 20px;
         }
         @include respond(phone) {
@@ -134,7 +139,7 @@
         height: 60px;
         padding-right: 10px;
 
-        @include respond(tab-land) {
+        @include respond(tab-port) {
           width: 35px;
           height: 50px;
           padding-right: 20px;
@@ -164,9 +169,6 @@
            }  
         }
         
-          
-        
-
         .arrow {
           width: 7px;
           height: 4px;

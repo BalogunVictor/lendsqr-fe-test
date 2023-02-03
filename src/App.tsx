@@ -1,4 +1,4 @@
-// import Login from "./Components/Login/Login";
+import Login from "./Components/Login/Login";
 import './App.scss'
 import Dashboard from './Components/Dashboard/Dashboard';
 

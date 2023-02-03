@@ -1,8 +1,10 @@
 import { CardList } from '../Card/Card'
-// import {SlOptionsVertical} from 'react-icons/sl'
+import {SlOptionsVertical} from 'react-icons/sl'
 import './main.scss'
 import {BsArrowRightCircle } from 'react-icons/bs'
-// import { FaHome } from 'react-icons/fa'
+import { FaHome } from 'react-icons/fa'
+
+
 type handleOpenProps = {
   handleOpen: () => void
 }
@@ -11,19 +13,22 @@ type handleOpenProps = {
 export const Main = (props: handleOpenProps ) => {
   return (
     <div className='main'>
+
+
       <div className='header'>
         <BsArrowRightCircle 
-          onClick= { () => props.handleOpen}
+          onClick= {props.handleOpen}
           size={25}
           className='navIcon'
          />
+         
         <h1>Users</h1>
         </div>
       <div className='mainWrapper'>
         <CardList />
         
         {/* <div className='table'> 
-          <div className="tableWrapper"> */}
+          <div className="tableWrapper">  */}
             {/* /////////////// Header//////////////////// */}
             {/* <div className="tableHeader">
                 <li className='titleItem'>
@@ -57,7 +62,7 @@ export const Main = (props: handleOpenProps ) => {
                 </li>
           </div> */}
               {/* /////////////// Body//////////////////// */}
-          {/* <div className="tableBody">
+           {/* <div className="tableBody">
               <span className='bodyItem'>Lendsqr</span>
               <span className='bodyItem'>Adedeji</span>     
               <span className='bodyItem'>adedeji@lendsqr.com</span>
