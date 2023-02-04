@@ -22,12 +22,24 @@
     }
 
     @include respond(phone) {
-      padding-left: 20px;
+      padding:0 20px;
     }
     
+    .navIcon{
+      display: none;
+      padding-right: 10px;
+
+      @include respond(phone) {
+        display: flex;
+      }
+    }
     
     .logoContainer{
       display: flex;
+      
+      @include respond (phone) {
+        margin-right: 90px;
+      }
      
 
       .logoIcon{
@@ -59,6 +71,7 @@
       display: flex;
       background: rgba(255, 255, 255, 0.2);
       box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+      border: none;
 
       &::placeholder{
         color: rgba(33, 63, 125, 0.7);

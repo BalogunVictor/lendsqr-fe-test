@@ -15,67 +15,64 @@
     width: 400px;
   }
 
-  .navIcon{
-  display: none;
-
-  @include respond(phone) {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 20px 
-  }
-  }
-
-
   .sidebarWrapper{
-    padding: 39px 30px;
+    padding: 39px 0;
 
+    
     p{
       font-family: 'Work Sans';
       font-weight: 500;
       font-size: 12px;
       line-height: 14px;
       color: #545F7D;
+      padding-left: 29px;
     }
-
-    .sidebarList{
-      padding: 0;
-      margin: 0;
-      height: 40px;
-      list-style: none;
-      display: flex;
-      align-items: center;
-
-    &:hover {
-      background: rgba(57, 205, 204, 0.06);
-      cursor: pointer;
-    }
-  }
-  .sidebarListItem{
-    display: flex;
+    .sideHeader{
+      padding-bottom: 20px;
+  
+      .sidebarList{
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding-left: 29px;
+  
+      &:hover {
+        background: rgba(57, 205, 204, 0.06);
+        cursor: pointer;
+        width: 100%;
+      }
     
-    .sidebarListItemText{
-      font-family: 'Work Sans';
-      font-weight: 400;
-      font-size: 16px;
-      color: #213F7D;
-
-      @include respond(tab-port) {
-        font-size: 14px;
-      }
-
-      @include respond (phone) {
+    .sidebarListItem{
+      display: flex;
+      
+      .sidebarListItemText{
+        font-family: 'Work Sans';
+        font-weight: 400;
         font-size: 16px;
+        color: #213F7D;
+  
+        @include respond(tab-port) {
+          font-size: 14px;
+        }
+  
+        @include respond (phone) {
+          font-size: 16px;
+        }
+  
       }
-
-    }
-     .switch{
-      padding-bottom: 52px;
-     }
-
-    .sidebarIcon{
-      margin-right: 16px;
-      color: #21407d59
+       .switch{
+        padding-bottom: 52px;
+       }
+  
+      .sidebarIcon{
+        margin-right: 16px;
+        color: #21407d59
+      }
     }
   }
+    }
 }
 }

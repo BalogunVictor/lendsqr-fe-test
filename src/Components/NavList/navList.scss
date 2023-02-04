@@ -10,12 +10,14 @@
     list-style: none;
     display: flex;
     align-items: center;
+    padding-left: 29px;
 
   &:hover {
     background: rgba(57, 205, 204, 0.06);
     cursor: pointer;
+    width: 100%;
   }
-}
+
 .sidebarListItem{
   display: flex;
   
@@ -29,7 +31,7 @@
       font-size: 14px;
     }
 
-    @include respond(phone) {
+    @include respond (phone) {
       font-size: 16px;
     }
 
@@ -42,5 +44,6 @@
     margin-right: 16px;
     color: #21407d59
   }
+}
 }
 }

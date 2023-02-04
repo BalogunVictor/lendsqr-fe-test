@@ -2,11 +2,21 @@ import './Topnavbar.scss'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {RiArrowDropDownFill} from 'react-icons/ri'
 import {BsBell} from 'react-icons/bs'
+import {RiMenu2Fill} from 'react-icons/ri'
 
-export const TopNavBar = () => {
+type handleOpenProps = {
+  handleOpen: () => void
+}
+
+export const TopNavBar = (props: handleOpenProps ) => {
   return (
     <div className='navBar'>
       <div className='navBarWrapper'>
+        <RiMenu2Fill
+          onClick= {props.handleOpen}
+          size={25}
+          className='navIcon'
+        />
 
       <div className="logoContainer">
         <img className='logoIcon' src="/asset/Union.png" alt="logo" />

@@ -2,35 +2,30 @@
 
 .main{
   width: 100%;
+  justify-content: center;
   background-color: #e5e5e527;
   
   .header{
     display: flex;
     align-items: center;
-    font-family: 'Work Sans';
-    font-weight: 500;
-    font-size: 24px;
-    padding-top: 60px;
-    padding-left: 60px;
-    color: #213F7D;
+    h1{
+      font-family: 'Work Sans';
+      font-weight: 500;
+      font-size: 24px;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      padding-left: 60px;
+      color: #213F7D;
+    }
 
     @include respond(phone) {
       padding-top: 10px;
       padding-left: 40px;
     }
-
-    .navIcon{
-      display: none;
-      padding-right: 10px;
-
-      @include respond(phone) {
-        display: flex;
-      }
-    }
   }
 
   .mainWrapper{
-    padding: 40px 60px;
+    padding: 0px 60px;
 
     @include respond (small-lap) {
       padding: 20px 30px;
