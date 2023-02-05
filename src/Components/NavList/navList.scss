@@ -16,6 +16,9 @@
     background: rgba(57, 205, 204, 0.06);
     cursor: pointer;
     width: 100%;
+    @include respond (small-lap){
+      width: 90%;
+    }
   }
 
 .sidebarListItem{

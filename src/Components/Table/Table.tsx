@@ -1,5 +1,5 @@
 import './table.scss'
-import { useState,useReducer, useEffect } from 'react'
+import { useState,useEffect } from 'react'
 import {
   createColumnHelper,
   flexRender,
@@ -7,16 +7,9 @@ import {
   useReactTable,
 } from '@tanstack/react-table'
 import axios from 'axios'
+import {Users} from './type'
 
-type Person = {
-  orgName: any
-  userName: any
-  email: any
-  phoneNumber: any
-  createdAt: any
-}
-
-const columnHelper = createColumnHelper<Person>()
+const columnHelper = createColumnHelper<Users>()
 
 const columns = [
   columnHelper.accessor('orgName', {
@@ -25,7 +18,7 @@ const columns = [
   }),
   columnHelper.accessor('userName', {
     cell: info => <i>{info.getValue()}</i>,
-    header: () => <span>UserName</span>,
+    header: () => 'Username',
   }),
   columnHelper.accessor('email', {
     header: () => 'email',
@@ -35,7 +28,7 @@ const columns = [
     header: 'Phone Number',
   }),
   columnHelper.accessor('createdAt', {
-    header: () => <span>Date joined</span>,
+    header: () => 'Date joined',
   }),
 
 ]

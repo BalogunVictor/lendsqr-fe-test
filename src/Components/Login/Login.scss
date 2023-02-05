@@ -48,11 +48,22 @@
       }
       
       .loginImage{
-        padding: 139px ;
+        padding: 139px;
+        @include respond (tab-port) {
+          padding: 100px;
+        }
 
         img{
           width: 600px;
           height: 337.57px;
+
+          @include respond(small-lap){
+            width: 500px;
+          }
+
+          @include respond (tab-port) {
+            width: 400px;
+          }
         }
       }
     }
@@ -67,7 +78,10 @@
         padding-left: 8px;
         padding-top: 30px;
       }
+
+      
       h1{
+        font-family: 'Work Sans', sans-serif;
         font-weight: 700;
         font-size: 40px;
         line-height: 55px;
@@ -76,6 +90,7 @@
       }
 
       p{
+        font-family: 'Work Sans', sans-serif;
         font-weight: 400;
         font-size: 20px;
         line-height: 27px;
@@ -97,9 +112,15 @@
             color: rgba(84, 95, 125, 0.6);
           }
 
-          @include respond(phone) {
+          @include respond(small-lap){
+            width: 400px;
+          }
+
+          @include respond (tab-port) {
             width: 350px;
           }
+
+
         }
 
         p{
@@ -127,7 +148,11 @@
           text-transform: uppercase;
           border: none;
 
-          @include respond(phone) {
+          @include respond(small-lap){
+            width: 410px;
+          }
+
+          @include respond(tab-port) {
             width: 350px;
           }
         }

@@ -7,7 +7,7 @@
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
   display: flex;
 
-  @include respond(tab-port) {
+  @include respond (small-lap) {
     width: 250px;
   }
 
@@ -43,6 +43,9 @@
         background: rgba(57, 205, 204, 0.06);
         cursor: pointer;
         width: 100%;
+        @include respond (small-lap){
+          width: 90%;
+        }
       }
     
     .sidebarListItem{
