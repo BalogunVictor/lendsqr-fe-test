@@ -1,4 +1,5 @@
 import './Login.scss'
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -26,7 +27,9 @@ const Login = () => {
               <input className='inputForm' type="email" placeholder='Email'/>
               <input className='inputForm' type="password" placeholder='Password' />
               <p>Forgot PASSWORD?</p>
+              <Link to='/dashboard'>
               <button>Log in</button>
+              </Link>
             </form>
           </div>
 

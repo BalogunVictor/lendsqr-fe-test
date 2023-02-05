@@ -1,120 +1,72 @@
 import './table.scss'
+import { useState,useReducer, useEffect } from 'react'
 import {
   createColumnHelper,
   flexRender,
   getCoreRowModel,
   useReactTable,
 } from '@tanstack/react-table'
-import { useState } from 'react';
-// import { fetchData, Users } from './FetchData'
-// import { useQuery } from 'react-query'
+import axios from 'axios'
 
-type Users = {
-  organization: string
-  Username: string
-  Email: string
-  Phone_number: string
-  Date_joined: string
-  Status: string
+type Person = {
+  orgName: any
+  userName: any
+  email: any
+  phoneNumber: any
+  createdAt: any
 }
 
-
-const defaultData: Users[] = [
-    {
-      organization: "Lendsqr",
-      Username: "Adedeji",
-      Email:"adedeji@lendsqr.com",
-      Phone_number: "08078903721",
-      Date_joined: "May 15, 2020 10:00 AM",
-      Status: "Inactive"
-    },
-    {
-      organization: "Lendsqr",
-      Username:"Adedeji",
-      Email:"adedeji@lendsqr.com",
-      Phone_number: "08078903721",
-      Date_joined:"May 15, 2020 10:00 AM",
-      Status:"Inactive"
-    },
-    {
-      organization:"Lendsqr",
-      Username: "Adedeji",
-      Email:"adedeji@lendsqr.com",
-      Phone_number:"08078903721",
-      Date_joined:"May 15, 2020 10:00 AM",
-      Status:"Inactive"
-    },
-    {
-      organization:"Lendsqr",
-      Username:"Adedeji",
-      Email:"adedeji@lendsqr.com",
-      Phone_number:"08078903721",
-      Date_joined:"May 15, 2020 10:00 AM",
-      Status:"Inactive"
-    },
-    {
-      organization: 'Lendsqr',
-      Username:"Adedeji",
-      Email:"adedeji@lendsqr.com",
-      Phone_number:"08078903721",
-      Date_joined:"May 15, 2020 10:00 AM",
-      Status:"Inactive"
-    }
-]
-
-const columnHelper = createColumnHelper<Users>()
+const columnHelper = createColumnHelper<Person>()
 
 const columns = [
-  columnHelper.accessor('organization', {
-    header: 'organization',
+  columnHelper.accessor('orgName', {
+    cell: info => info.getValue(),
+    header: () => 'organization',
   }),
-  columnHelper.accessor('Username', {
-    header: 'Username',
+  columnHelper.accessor('userName', {
+    cell: info => <i>{info.getValue()}</i>,
+    header: () => <span>UserName</span>,
   }),
-  columnHelper.accessor('Email', {
-    header: 'Email',
+  columnHelper.accessor('email', {
+    header: () => 'email',
+    cell: info => info.renderValue(),
   }),
-  columnHelper.accessor('Phone_number', {
-    header: 'Phone number',
-    
+  columnHelper.accessor('phoneNumber', {
+    header: 'Phone Number',
   }),
-  columnHelper.accessor('Date_joined', {
-    header: 'Date joined',
-  }),
-  columnHelper.accessor('Status', {
-    header: 'Status',
+  columnHelper.accessor('createdAt', {
+    header: () => <span>Date joined</span>,
   }),
 
 ]
+
 export const Table = () => {
-  const [data, setData] = useState(() => [...defaultData])
+  const [user,setUser] = useState<any>([])
 
-  // const [{ pageIndex, pageSize }, setPagination] =
-  // React.useState<PaginationState>({
-  //   pageIndex: 0,
-  //   pageSize: 10,
-  // })
+  const fetchUsers = async () => {
 
-  // const fetchDataOptions = {
-  //   pageIndex,
-  //   pageSize,
-  // }
+    const response = await axios
+      .get("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users")
+      .then((response) => {
+        setUser(response.data)
+      });
 
-  // const dataQuery = useQuery(
-  //   ['data', fetchDataOptions],
-  //   () => fetchData(fetchDataOptions),
-  //   { keepPreviousData: true }
-  // )
+  };
 
+  useEffect(() => {
+    fetchUsers();
+  }, []);
+
+  console.log(user);
 
   const table = useReactTable({
-    data,
+    data:user,
     columns,
     getCoreRowModel: getCoreRowModel(),
   })
 
   return (
-    <div className='tableContainer'>
+    <div>
       <table>
         <thead>
           {table.getHeaderGroups().map(headerGroup => (
@@ -143,30 +95,23 @@ export const Table = () => {
             </tr>
           ))}
         </tbody>
+        <tfoot>
+          {table.getFooterGroups().map(footerGroup => (
+            <tr key={footerGroup.id}>
+              {footerGroup.headers.map(header => (
+                <th key={header.id}>
+                  {header.isPlaceholder
+                    ? null
+                    : flexRender(
+                        header.column.columnDef.footer,
+                        header.getContext()
+                      )}
+                </th>
+              ))}
+            </tr>
+          ))}
+        </tfoot>
       </table>
     </div>
   )
 }
-
-
-
-
-
-// import {useMemo} from 'react'
-// import { useTable, } from "@tanstack/react-table"
-// import MOCK_DATA from './MOCK_DATA.json'
-// import {COLUMNS} from './colums'
-
-
-
-
-
-  // const columns = useMemo(() => COLUMNS, [])
-  // const data = useMemo(() => MOCK_DATA, [])
-
-  //  const tableInstance = useTable({
-  //     columns,
-  //     data,
-  //  })
-
- 

@@ -17,8 +17,9 @@
 
 
     @include respond(tab-port) {
-      grid-template-columns: 2fr 2fr;
+      grid-template-columns: 1fr 1fr;
       justify-content: center;
+      align-items: center;
     }
     
     @include respond(phone) {
